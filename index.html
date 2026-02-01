@@ -1,55 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>coding learner</title>
+  <title>Learn HTML & CSS</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="mine.css">
-<script src="/mine/mine.js"></script>
 <body>
 
-  <header>
-    <h1>Hi, I'm Balaji</h1>
-    <p>A Coding Learner & Web Developer</p>
-  </header>
+  <h1>Learn HTML & CSS</h1>
+  <p>Register to start learning</p>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project-container">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>A cool website built with HTML, CSS & JS</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Another awesome project with animations</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 3</h3>
-        <p>Fun project showing interactive UI</p>
-      </div>
-    </div>
-  </section>
+  <form id="registerForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <button type="submit">Register</button>
+  </form>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Send me a message and I will get back to you!</p>
-
-    <form action="https://formspree.io/f/mnqxyzab" method="POST" id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="bounce-btn">Send Message</button>
-    </form>
-    <p>All messages go to <strong>codercss7890@gmail.com</strong></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 CoderCSS. All rights reserved.</p>
-  </footer>
-
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
